@@ -1,0 +1,307 @@
+{
+  "debts": [
+    {
+      "id": "4b9c1c15-3c7d-48ad-a24f-66ee948527ee",
+      "name": "Capital One Venture",
+      "category": "Credit Card",
+      "apr": 28.24,
+      "balance": 251.57,
+      "minPayment": 0,
+      "notes": "",
+      "account": {
+        "url": "",
+        "secure": {}
+      }
+    },
+    {
+      "id": "dcb96c31-b47b-4e4d-af7d-6f8943aff815",
+      "name": "Capital One Savor",
+      "category": "Credit Card",
+      "apr": 28.99,
+      "balance": 174.99,
+      "minPayment": 0,
+      "notes": "",
+      "account": {
+        "url": "",
+        "secure": {}
+      }
+    },
+    {
+      "id": "12c7aaa6-0d12-495d-8a81-6e5ef0d06b82",
+      "name": "Avant Card",
+      "category": "Credit Card",
+      "apr": 35.99,
+      "balance": 300,
+      "minPayment": 0,
+      "notes": "",
+      "account": {
+        "url": "",
+        "secure": {}
+      }
+    },
+    {
+      "id": "bca41fd3-d7a5-4afe-9614-955471466056",
+      "name": "Blue Eagle",
+      "category": "Car Loan",
+      "apr": 9.4,
+      "balance": 12765.3,
+      "minPayment": 0,
+      "notes": "",
+      "account": {
+        "url": "",
+        "secure": {}
+      }
+    },
+    {
+      "id": "c6652b9b-e3b5-4b64-9961-955dfc9cf022",
+      "name": "LakeView Renate",
+      "category": "Mortgage",
+      "apr": 5.37,
+      "balance": 84074.04,
+      "minPayment": 0,
+      "notes": "",
+      "account": {
+        "url": "",
+        "secure": {}
+      }
+    },
+    {
+      "id": "fe917168-dc47-4412-9c30-320fea172bca",
+      "name": "ServBank",
+      "category": "Mortgage",
+      "apr": 7,
+      "balance": 227864.07,
+      "minPayment": 0,
+      "notes": "",
+      "account": {
+        "url": "",
+        "secure": {}
+      }
+    },
+    {
+      "id": "bc9cb10c-8d8f-4946-8ce9-3dcea4b4ac7d",
+      "name": "Lowes",
+      "category": "Credit Card",
+      "apr": 31.99,
+      "balance": 1414.94,
+      "minPayment": 0,
+      "notes": "",
+      "account": {
+        "url": "https://www.synchrony.com/accounts/account-details",
+        "secure": {}
+      }
+    }
+  ],
+  "assets": [
+    {
+      "id": "bf5ed737-a4f1-46eb-a959-aed16d7e18fa",
+      "date": "2026-05-26",
+      "symbol": "SAOS",
+      "type": "Crypto",
+      "spent": 10,
+      "units": 1201.14,
+      "targetPrice": 1,
+      "notes": "Imported starter purchase",
+      "account": {
+        "url": "",
+        "secure": {}
+      }
+    },
+    {
+      "id": "a83f829b-b484-458b-b2af-3d6da0a56a90",
+      "date": "2026-05-24",
+      "symbol": "SAOS",
+      "type": "Crypto",
+      "spent": 10,
+      "units": 933432.49,
+      "targetPrice": 1,
+      "notes": "Imported starter purchase",
+      "account": {
+        "url": "",
+        "secure": {}
+      }
+    },
+    {
+      "id": "7948bfa3-1d63-41b4-b46e-bc75f2dcf13f",
+      "date": "2026-05-22",
+      "symbol": "SAOS",
+      "type": "Crypto",
+      "spent": 100,
+      "units": 14367.74,
+      "targetPrice": 1,
+      "notes": "Imported starter purchase",
+      "account": {
+        "url": "",
+        "secure": {}
+      }
+    },
+    {
+      "id": "e66a97c1-d1f0-4235-b221-98e8f7a186a5",
+      "date": "2026-05-21",
+      "symbol": "SAOS",
+      "type": "Crypto",
+      "spent": 10,
+      "units": 1556.84,
+      "targetPrice": 1,
+      "notes": "Imported starter purchase",
+      "account": {
+        "url": "",
+        "secure": {}
+      }
+    },
+    {
+      "id": "49b506d3-fd89-4a1a-91ce-95ea9218897c",
+      "date": "2026-05-20",
+      "symbol": "SAOS",
+      "type": "Crypto",
+      "spent": 10,
+      "units": 123106.7,
+      "targetPrice": 1,
+      "notes": "Imported starter purchase",
+      "account": {
+        "url": "",
+        "secure": {}
+      }
+    },
+    {
+      "id": "1c033807-5c1e-4dbc-acbd-181eb3a1ea6c",
+      "date": "2026-05-20",
+      "symbol": "SAOS",
+      "type": "Crypto",
+      "spent": 10,
+      "units": 1700.97,
+      "targetPrice": 1,
+      "notes": "Imported starter purchase",
+      "account": {
+        "url": "",
+        "secure": {}
+      }
+    },
+    {
+      "id": "4c7ef9ab-c025-4113-ad43-15ab71bb0cc6",
+      "date": "2026-05-19",
+      "symbol": "AGNC",
+      "type": "Stock",
+      "spent": 10,
+      "units": 0.98255,
+      "targetPrice": "",
+      "notes": "Dividend stock starter purchase",
+      "account": {
+        "url": "",
+        "secure": {}
+      }
+    },
+    {
+      "id": "0850e556-3430-4a6a-a89b-80901826d9a8",
+      "date": "2026-05-12",
+      "symbol": "TAO",
+      "type": "Crypto",
+      "spent": 10,
+      "units": 0.0305,
+      "targetPrice": "",
+      "notes": "Core/speculative crypto purchase",
+      "account": {
+        "url": "",
+        "secure": {}
+      }
+    },
+    {
+      "id": "87467aa3-19a2-4330-ae39-c5722be1fbdc",
+      "date": "2026-05-06",
+      "symbol": "DOGE",
+      "type": "Crypto",
+      "spent": 10,
+      "units": 84.3,
+      "targetPrice": 1,
+      "notes": "Speculative crypto purchase",
+      "account": {
+        "url": "",
+        "secure": {}
+      }
+    },
+    {
+      "id": "fe92b72a-c15b-4bbf-ad3c-d6e0cef556db",
+      "date": "2026-04-29",
+      "symbol": "BTC",
+      "type": "Crypto",
+      "spent": 10,
+      "units": 0.000125,
+      "targetPrice": "",
+      "notes": "Core crypto purchase",
+      "account": {
+        "url": "",
+        "secure": {}
+      }
+    },
+    {
+      "id": "cee8aa53-5331-4f2a-b288-0d738aa47c11",
+      "date": "2026-04-19",
+      "symbol": "TAO",
+      "type": "Crypto",
+      "spent": 5,
+      "units": 0.0196,
+      "targetPrice": "",
+      "notes": "Core/speculative crypto purchase",
+      "account": {
+        "url": "",
+        "secure": {}
+      }
+    },
+    {
+      "id": "4b6f6574-3a7a-4ad1-bfc1-b567ee2a30c1",
+      "date": "2026-04-16",
+      "symbol": "ETH",
+      "type": "Crypto",
+      "spent": 5,
+      "units": 0.00203,
+      "targetPrice": "",
+      "notes": "Core crypto purchase",
+      "account": {
+        "url": "",
+        "secure": {}
+      }
+    },
+    {
+      "id": "95a0ca30-9ea6-47ca-a13e-19d822ec47b6",
+      "date": "2026-04-15",
+      "symbol": "BTC",
+      "type": "Crypto",
+      "spent": 5,
+      "units": 0.0000641,
+      "targetPrice": "",
+      "notes": "Core crypto purchase",
+      "account": {
+        "url": "",
+        "secure": {}
+      }
+    },
+    {
+      "id": "1f9d15d9-7c85-4c9f-92da-2f9325e5ae4e",
+      "date": "2026-04-09",
+      "symbol": "BTC",
+      "type": "Crypto",
+      "spent": 5,
+      "units": 0.000066,
+      "targetPrice": "",
+      "notes": "Core crypto purchase",
+      "account": {
+        "url": "",
+        "secure": {}
+      }
+    }
+  ],
+  "settings": {
+    "monthlyDeploy": 300,
+    "targetPassiveIncome": 500,
+    "allocation": {
+      "coreCryptoPct": 50,
+      "specCryptoPct": 25,
+      "stockPct": 15,
+      "debtPct": 10
+    },
+    "vault": {
+      "salt": "PwmsJPQ/bemnU8d8hNmrdQ==",
+      "iterations": 250000
+    }
+  }
+}
