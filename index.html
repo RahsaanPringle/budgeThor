@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budgethor - Budgeting App</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -41,7 +43,7 @@
                     </table>
                 </div>
             </section>
-            
+
             <section id="scheduleSection" class="tab-content">
                 <h2>Schedule Repeating Transactions</h2>
                 <form id="scheduleForm">
@@ -72,38 +74,50 @@
                         <input type="date" id="scheduleEndDate">
                     </div>
                     <button type="submit" id="scheduleSubmitBtn">Add Schedule</button>
-                    <button type="button" id="cancelEditScheduleBtn" class="cancel-button" style="display: none;">Cancel Edit</button>
+                    <button type="button" id="cancelEditScheduleBtn" class="cancel-button" style="display: none;">Cancel
+                        Edit</button>
                 </form>
                 <div id="schedulesList">
                     <h3>Scheduled Transactions</h3>
                     <div class="schedule-toolbar">
-                        <button id="exportSchedulesJsonBtn" class="small-button export-button" type="button">Export JSON Schedule</button>
-                        <button id="importSchedulesJsonBtn" class="small-button edit-button" type="button">Import JSON Schedule</button>
-                        <button id="exportSchedulesCsvBtn" class="small-button export-button" type="button">Export Recurring Items CSV</button>
-                        <input type="file" id="scheduleJsonUpload" class="hidden-file-input" accept=".json,application/json">
+                        <button id="exportSchedulesJsonBtn" class="small-button export-button" type="button">Export JSON
+                            Schedule</button>
+                        <button id="importSchedulesJsonBtn" class="small-button edit-button" type="button">Import JSON
+                            Schedule</button>
+                        <button id="exportSchedulesCsvBtn" class="small-button export-button" type="button">Export
+                            Recurring Items CSV</button>
+                        <input type="file" id="scheduleJsonUpload" class="hidden-file-input"
+                            accept=".json,application/json">
                     </div>
                     <div id="schedulesTableContainer"></div>
                 </div>
             </section>
-            
+
             <section id="projectionsSection" class="tab-content">
-                <h2>Projections</h2>
+                <h2>Projectionsccc</h2>
                 <div>
                     <label for="projectionStartDate">Start Date:</label>
                     <input type="date" id="projectionStartDate">
                 </div>
-                <p style="margin: 10px 0; color: #555;">Projections are shown as a transaction-by-transaction ledger with a running balance.</p>
+                <p style="margin: 10px 0; color: #555;">Projections are shown as a transaction-by-transaction ledger
+                    with a running balance.</p>
                 <div>
                     <label for="projectionMonths">Months to Project:</label>
                     <input type="number" id="projectionMonths" value="12" min="1">
                 </div>
                 <div class="projection-toolbar">
-                    <button id="generateProjectionBtn" type="button">Generate Projection</button>
-                    <button id="exportProjectionsJsonBtn" class="small-button export-button" type="button">Export JSON Projections</button>
-                    <button id="importProjectionsJsonBtn" class="small-button edit-button" type="button">Import JSON Projections</button>
-                    <button id="exportProjectionsCsvBtn" class="small-button export-button" type="button">Export CSV Projections</button>
-                    <button id="importProjectionsCsvBtn" class="small-button edit-button" type="button">Import CSV Projections</button>
-                    <input type="file" id="projectionJsonUpload" class="hidden-file-input" accept=".json,application/json">
+                    <button id="generateProjectionBtn" class="small-button edit-button" type="button">Generate
+                        Projection</button>
+                    <button id="exportProjectionsJsonBtn" class="small-button export-button" type="button">Export JSON
+                        Projections</button>
+                    <button id="importProjectionsJsonBtn" class="small-button edit-button" type="button">Import JSON
+                        Projections</button>
+                    <button id="exportProjectionsCsvBtn" class="small-button export-button" type="button">Export CSV
+                        Projections</button>
+                    <button id="importProjectionsCsvBtn" class="small-button edit-button" type="button">Import CSV
+                        Projections</button>
+                    <input type="file" id="projectionJsonUpload" class="hidden-file-input"
+                        accept=".json,application/json">
                     <input type="file" id="projectionCsvUpload" class="hidden-file-input" accept=".csv,text/csv">
                 </div>
             </section>
@@ -115,4 +129,5 @@
     </div>
     <script src="js/app.js"></script>
 </body>
+
 </html>
