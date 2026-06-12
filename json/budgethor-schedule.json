@@ -1,0 +1,74 @@
+[
+  {
+    "id": "mq8oq18331ntrferi",
+    "startDate": "2026-06-09",
+    "description": "AlphaOmega",
+    "amount": 3094,
+    "frequency": "biweekly",
+    "endDate": null
+  },
+  {
+    "id": "mq8or05jenypbl0ov",
+    "startDate": "2026-06-15",
+    "description": "Capital One Savor",
+    "amount": -200,
+    "frequency": "weekly",
+    "endDate": null
+  },
+  {
+    "id": "mq8orjaf65z2tzegs",
+    "startDate": "2026-06-11",
+    "description": "Capital One Venture",
+    "amount": -200,
+    "frequency": "weekly",
+    "endDate": null
+  },
+  {
+    "id": "mq8ox3x2h4qabwbsg",
+    "startDate": "2026-06-12",
+    "description": "AEP Merriman",
+    "amount": -25,
+    "frequency": "weekly",
+    "endDate": null
+  },
+  {
+    "id": "mq8p0a8nv3ivxfhx8",
+    "startDate": "2026-06-16",
+    "description": "Shentel",
+    "amount": -30,
+    "frequency": "weekly",
+    "endDate": null
+  },
+  {
+    "id": "mq8p2t0fq31nkluwq",
+    "startDate": "2026-06-17",
+    "description": "UOA of Occoquan Ridge",
+    "amount": -165,
+    "frequency": "weekly",
+    "endDate": null
+  },
+  {
+    "id": "mq8p5wr36unger9na",
+    "startDate": "2026-06-18",
+    "description": "Lowes🙏",
+    "amount": -300,
+    "frequency": "weekly",
+    "endDate": null
+  },
+  {
+    "id": "mq8q1rugmk8ca3b3u",
+    "startDate": "2026-06-24",
+    "description": "Valon Mortgage",
+    "amount": -1250,
+    "frequency": "monthly",
+    "endDate": null
+  },
+  {
+    "id": "mq8r89y7x7kmq855w",
+    "startDate": "2026-07-01",
+    "description": "⛵Boat Rental",
+    "amount": -600,
+    "frequency": "yearly",
+    "endDate": null
+  }
+]
