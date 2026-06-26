@@ -3,10 +3,17 @@
     margin: 0;
     padding: 0;
 }
+:root {
+    --text-main: #1f2937;
+    --text-muted: #374151;
+    --positive-color: #166534;
+    --negative-color: #991b1b;
+    --warning-color: #92400e;
+}
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: var(--text-main);
     background-color: #f4f4f4;
 }
 .container {
@@ -29,7 +36,7 @@ nav {
 nav button {
     flex: 1;
     padding: 12px;
-    background-color: #3498db;
+    background-color: #0b5ea8;
     color: white;
     border: none;
     cursor: pointer;
@@ -38,10 +45,10 @@ nav button {
     transition: background-color 0.3s;
 }
 nav button:hover {
-    background-color: #2980b9;
+    background-color: #084a85;
 }
 nav button.active {
-    background-color: #2980b9;
+    background-color: #084a85;
 }
 .tab-content {
     display: none;
@@ -66,14 +73,14 @@ nav button.active {
 }
 .upload-section button {
     padding: 10px 20px;
-    background-color: #2ecc71;
+    background-color: #1f6d36;
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 4px;
 }
 .upload-section button:hover {
-    background-color: #27ae60;
+    background-color: #155226;
 }
 table {
     width: 100%;
@@ -115,7 +122,7 @@ form input, form select {
 form button {
     grid-column: 1 / -1;
     padding: 12px;
-    background-color: #e74c3c;
+    background-color: #b42318;
     color: white;
     border: none;
     cursor: pointer;
@@ -123,7 +130,7 @@ form button {
     font-size: 16px;
 }
 form button:hover {
-    background-color: #c0392b;
+    background-color: #8e1c13;
 }
 #schedulesList {
     margin-top: 20px;
@@ -157,16 +164,45 @@ form button:hover {
     cursor: pointer;
 }
 .edit-button {
-    background-color: #3498db;
+    background-color: #1f5a96;
 }
 .delete-button {
     background-color: #95a5a6;
 }
 .export-button {
-    background-color: #2ecc71;
+    background-color: #1f6d36;
 }
 .cancel-button {
     background-color: #7f8c8d;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+.projection-note {
+    margin: 10px 0;
+    color: var(--text-muted);
+}
+.amount-positive {
+    color: var(--positive-color);
+}
+.amount-negative {
+    color: var(--negative-color);
+}
+.balance-above {
+    color: var(--positive-color);
+}
+.balance-equal {
+    color: var(--warning-color);
+}
+.balance-below {
+    color: var(--negative-color);
 }
 #projectionResult {
     margin-top: 30px;

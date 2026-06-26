@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Budgethor helps you import transactions, schedule recurring items, and project future balances.">
     <title>Budgethor - Budgeting App</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -23,6 +24,7 @@
             <section id="transactionsSection" class="tab-content active">
                 <h2>Transactions</h2>
                 <div class="upload-section">
+                    <label for="csvUpload" class="sr-only">Select one or more CSV transaction files</label>
                     <input type="file" id="csvUpload" accept=".csv" multiple>
                     <button id="importBtn">Import Transactions</button>
                 </div>
@@ -87,19 +89,19 @@
                         <button id="exportSchedulesCsvBtn" class="small-button export-button" type="button">Export
                             Recurring Items CSV</button>
                         <input type="file" id="scheduleJsonUpload" class="hidden-file-input"
-                            accept=".json,application/json">
+                            accept=".json,application/json" aria-label="Import recurring schedule JSON file">
                     </div>
                     <div id="schedulesTableContainer"></div>
                 </div>
             </section>
 
             <section id="projectionsSection" class="tab-content">
-                <h2>Projectionsccc</h2>
+                <h2>Projections</h2>
                 <div>
                     <label for="projectionStartDate">Start Date:</label>
                     <input type="date" id="projectionStartDate">
                 </div>
-                <p style="margin: 10px 0; color: #555;">Projections are shown as a transaction-by-transaction ledger
+                <p class="projection-note">Projections are shown as a transaction-by-transaction ledger
                     with a running balance.</p>
                 <div>
                     <label for="projectionMonths">Months to Project:</label>
@@ -117,8 +119,9 @@
                     <button id="importProjectionsCsvBtn" class="small-button edit-button" type="button">Import CSV
                         Projections</button>
                     <input type="file" id="projectionJsonUpload" class="hidden-file-input"
-                        accept=".json,application/json">
-                    <input type="file" id="projectionCsvUpload" class="hidden-file-input" accept=".csv,text/csv">
+                        accept=".json,application/json" aria-label="Import projections JSON file">
+                    <input type="file" id="projectionCsvUpload" class="hidden-file-input" accept=".csv,text/csv"
+                        aria-label="Import projections CSV file">
                 </div>
             </section>
             <div id="projectionResult">
@@ -127,7 +130,7 @@
             </div>
         </main>
     </div>
-    <script src="js/app.js"></script>
+    <script src="js/app.js" defer></script>
 </body>
 
 </html>

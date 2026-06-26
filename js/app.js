@@ -35,6 +35,11 @@ const SCHEDULES_KEY = "budgethor_schedules";
 const PROJECTION_SETTINGS_KEY = "budgethor_projection_settings";
 const PROJECTIONS_KEY = "budgethor_projections";
 const DEFAULT_SCHEDULES_URL = "json/budgethor-schedule.json";
+const ACCESSIBLE_COLORS = {
+    positive: "#166534",
+    negative: "#991b1b",
+    warning: "#92400e"
+};
 
 // Initialize data from localStorage or set defaults
 let transactions = JSON.parse(localStorage.getItem(TRANSACTIONS_KEY)) || [];
@@ -275,9 +280,9 @@ function renderTransactions() {
         const amountCell = document.createElement("td");
         amountCell.textContent = t.amount.toFixed(2);
         if (t.amount < 0) {
-            amountCell.style.color = "red";
+            amountCell.classList.add("amount-negative");
         } else {
-            amountCell.style.color = "green";
+            amountCell.classList.add("amount-positive");
         }
         row.appendChild(amountCell);
         const accountCell = document.createElement("td");
@@ -971,7 +976,7 @@ function renderProjectionCanvas(canvas, data) {
         const y = yForBalance(entry.balance);
         ctx.beginPath();
         ctx.arc(x, y, 4, 0, Math.PI * 2);
-        ctx.fillStyle = entry.balance < 0 ? "#e74c3c" : "#2ecc71";
+        ctx.fillStyle = entry.balance < 0 ? ACCESSIBLE_COLORS.negative : ACCESSIBLE_COLORS.positive;
         ctx.fill();
         ctx.strokeStyle = "#ffffff";
         ctx.lineWidth = 2;
@@ -1045,6 +1050,7 @@ function formatCurrency(value) {
 }
 
 function renderProjectionTable(data) {
+    const runningAverageData = getRunningAverageBalances(data);
     const container = document.createElement("div");
     container.style.overflowX = "auto";
     const table = document.createElement("table");
@@ -1064,7 +1070,7 @@ function renderProjectionTable(data) {
     thead.appendChild(headerRow);
     table.appendChild(thead);
     const tbody = document.createElement("tbody");
-    data.forEach(entry => {
+    data.forEach((entry, rowIndex) => {
         const row = document.createElement("tr");
         const cells = [
             entry.label,
@@ -1081,10 +1087,15 @@ function renderProjectionTable(data) {
             td.style.borderBottom = "1px solid #ddd";
             td.style.verticalAlign = "top";
             if (index === 4) {
-                td.style.color = entry.amount < 0 ? "red" : entry.amount > 0 ? "green" : "#333";
+                if (entry.amount < 0) {
+                    td.classList.add("amount-negative");
+                } else if (entry.amount > 0) {
+                    td.classList.add("amount-positive");
+                }
             }
             if (index === 5) {
-                td.style.color = entry.balance < 0 ? "red" : "green";
+                const averageBalance = runningAverageData[rowIndex]?.averageBalance ?? entry.balance;
+                td.classList.add(getBalanceVsAverageClass(entry.balance, averageBalance));
             }
             row.appendChild(td);
         });
@@ -1099,6 +1110,14 @@ function formatAmount(value) {
     if (value < 0) return "-$" + Math.abs(value).toFixed(2);
     if (value > 0) return "$" + value.toFixed(2);
     return "$0.00";
+}
+
+function getBalanceVsAverageClass(balance, averageBalance) {
+    const balanceCents = Math.round((Number(balance) || 0) * 100);
+    const averageCents = Math.round((Number(averageBalance) || 0) * 100);
+    if (balanceCents > averageCents) return "balance-above";
+    if (balanceCents === averageCents) return "balance-equal";
+    return "balance-below";
 }
 
 async function loadDefaultSchedulesIfEmpty() {
